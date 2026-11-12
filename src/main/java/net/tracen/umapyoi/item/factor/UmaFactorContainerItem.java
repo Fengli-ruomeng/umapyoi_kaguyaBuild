@@ -4,6 +4,7 @@ import java.util.List;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.MethodsReturnNonnullByDefault;
+import net.minecraft.Util;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.network.chat.Component;
@@ -16,6 +17,7 @@ import net.tracen.umapyoi.item.data.DataComponentsTypeRegistry;
 import net.tracen.umapyoi.registry.factors.FactorData;
 import net.tracen.umapyoi.registry.factors.UmaFactorStack;
 import net.tracen.umapyoi.utils.UmaFactorUtils;
+import net.tracen.umapyoi.utils.UmaSoulUtils;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
@@ -31,8 +33,8 @@ public class UmaFactorContainerItem extends Item {
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
         List<FactorData> datas = stack.get(DataComponentsTypeRegistry.FACTOR_DATA);
-        String buffer = "umadata." + stack.get(DataComponentsTypeRegistry.DATA_LOCATION).name().toLanguageKey();
-        tooltipComponents.add(Component.translatable("tooltip.umapyoi.umadata.name", I18n.get(buffer))
+        String umaName = Util.makeDescriptionId("umadata", UmaSoulUtils.getName(stack));
+        tooltipComponents.add(Component.translatable("tooltip.umapyoi.umadata.name", I18n.get(umaName))
                 .withStyle(ChatFormatting.GRAY));
         if (Screen.hasShiftDown() || !UmapyoiConfig.TOOLTIP_SWITCH.get()) {
             tooltipComponents.add(Component.translatable("tooltip.umapyoi.factors.factors_details")
