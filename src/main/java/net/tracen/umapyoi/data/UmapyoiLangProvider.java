@@ -610,6 +610,7 @@ public class UmapyoiLangProvider extends AbstractLangProvider {
         addUma(UmaDataRegistry.HISHI_AMAZON, "Hishi Amazon");
         addUma(UmaDataRegistry.KISEKI, "Kiseki");
         addUma(UmaDataRegistry.MEJIRO_RAMONU, "Mejiro Ramonu");
+        addUma(UmaDataRegistry.CHRONO_GENESIS, "Chrono Genesis");
         addUma(UmaDataRegistry.STARDUST, "Stardust");
         addUma(UmaDataRegistry.KING_HALO_CHEER, "[Cheerleader in Nobel White] King Halo");
         addUma(UmaDataRegistry.SAKURA_BAKUSHIN_O_SPORTS, "[Red Hot☆Leader] Sakura Bakushin O");
