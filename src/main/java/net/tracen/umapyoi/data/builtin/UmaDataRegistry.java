@@ -152,6 +152,7 @@ public class UmaDataRegistry {
     public static final ResourceKey<UmaData> KISEKI = register("kiseki");
     public static final ResourceKey<UmaData> MEJIRO_RAMONU = register("mejiro_ramonu");
     public static final ResourceKey<UmaData> CHRONO_GENESIS = register("chrono_genesis");
+    public static final ResourceKey<UmaData> VICTOIRE_PISA = register("victoire_pisa");
     
     public static void registerAll(BootstapContext<UmaData> bootstrap) {
     	
@@ -299,6 +300,7 @@ public class UmaDataRegistry {
         bootstrap.register(KISEKI, UmaData.createNewUmamusume("kiseki", GachaRanking.SR, new int[] {10, 0, 0, 10, 10}, new Aptitude[]{Aptitude.A, Aptitude.G, Aptitude.G, Aptitude.C, Aptitude.A, Aptitude.A}, Position.FRONT_RUNNER)); // front runner / late surger
         bootstrap.register(MEJIRO_RAMONU, UmaData.createNewUmamusume("mejiro_ramonu", GachaRanking.SR, new int[] {15, 0, 0, 0, 15}, new Aptitude[]{Aptitude.A, Aptitude.F, Aptitude.B, Aptitude.A, Aptitude.A, Aptitude.E}, Position.PACE_CHASER)); // pace chaser / late surger
         bootstrap.register(CHRONO_GENESIS, UmaData.createNewUmamusume("chrono_genesis", GachaRanking.SR, new int[] {10, 10, 0, 10, 0}, new Aptitude[]{Aptitude.A, Aptitude.G, Aptitude.G, Aptitude.B, Aptitude.A, Aptitude.A}, Position.PACE_CHASER));
+        bootstrap.register(VICTOIRE_PISA, UmaData.createNewUmamusume("victoire_pisa", GachaRanking.SR, new int[] {0, 10, 0, 10, 10}, new Aptitude[]{Aptitude.A, Aptitude.A, Aptitude.G, Aptitude.B, Aptitude.A, Aptitude.B}, Position.PACE_CHASER)); // Pace Chaser (A) / Late Surger (A)
 
     }
 
