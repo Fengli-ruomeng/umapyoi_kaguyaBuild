@@ -84,7 +84,7 @@ public class UmapyoiRecipeProvider extends AbstractRecipeProvider {
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, BlockRegistry.RACE_SELECT_BLOCK.get()).pattern(" J ").pattern("BLB").pattern("AAA")
         .define('A', Tags.Items.INGOTS_GOLD)
         .define('B', Items.NETHER_STAR).define('L', Items.LECTERN)
-        .define('J', ItemRegistry.RACE_SELECT_BLOCK.get())
+        .define('J', ItemRegistry.UMA_RACE_TICKET.get())
         .unlockedBy("has_item", has(ItemRegistry.RACE_SELECT_BLOCK.get())).save(consumer);
         
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, BlockRegistry.THREE_GODDESS.get()).pattern(" J ")

@@ -31,7 +31,7 @@ public class SkillOverlay implements LayeredDraw.Layer {
 
     @Override
     public void render(GuiGraphics guiGraphics, DeltaTracker deltaTracker) {
-        if (!UmapyoiConfig.OVERLAY_SWITCH.get())
+        if (minecraft.options.hideGui || !UmapyoiConfig.OVERLAY_SWITCH.get())
             return;
         int x = guiGraphics.guiWidth() / 2;
         int y = guiGraphics.guiHeight();
